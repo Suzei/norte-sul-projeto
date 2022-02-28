@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <HeaderStyle>
       <HeaderStyleInfo>
-        <h3>Conforto e qualidade para levar o bem estar com alto padrão de atendimento a seus funcionários.</h3>
+        <h3>Conforto e qualidade para levar bem-estar com alto padrão <br/> de atendimento a <br/> seus funcionários.</h3>
         <p>Conheça o plano de Ouro da Porto Seguro Saúde.</p>
           <div className="header__prices">
             <span>A partir de <h2><sup>R$</sup>255<sup>,65*</sup></h2></span>

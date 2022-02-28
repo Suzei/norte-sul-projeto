@@ -7,7 +7,6 @@ export const HeaderStyle = styled.div `
   background-size: cover;
 `
 export const HeaderStyleInfo = styled.div `
-
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -26,36 +25,36 @@ export const HeaderStyleInfo = styled.div `
     align-items: center;
     gap: 10px;
     white-space: nowrap;
+    width: 100%;
     
     span {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 7px;
+      font-weight: 300;
+      color: var(--button-color);
+      font-size: 17px;
+
+      h2 {
+        font-weight: 700;
+        font-size: 33px;
+      }
     }
   }
   h3 {
-    max-width: 370px;
-    font-size: 30px;
+    max-width: 500px;
+    font-size: 40px;
     color: white;
     text-shadow: #00000082 2px 2px 5px;
   }
 
   h3::after {
-    display:block;
-    content: "";
-    position: relative;
-    left: 0;
-    bottom: 0;
-    max-width: 150px;
-    height: 1px;
-    width: 50%;
-    border-bottom:3px solid white;
-    padding:4px 0px;
+    
   }
 
   button {
     border-radius: 31px;
-    padding: 10px 30px;
+    padding: 15.5px;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 13px;
@@ -79,6 +78,19 @@ export const HeaderStyleInfo = styled.div `
     p {
       display: none;
     }
+
+    h3 {
+      max-width: 500px;
+    }
+    span {
+      align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 378px) {
+     button {
+       padding: 12px 19px ;
+     }
   }
 }
 `
