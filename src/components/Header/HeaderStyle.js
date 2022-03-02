@@ -49,20 +49,29 @@ export const HeaderStyleInfo = styled.div `
   }
 
   h3::after {
-    
+    display:block;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    max-width: 200px;
+    margin-top: 5px;
+    border-bottom:3px solid var(--white);
+    padding:4px 0px;
   }
 
   button {
     border-radius: 31px;
-    padding: 15.5px;
+    padding: 15px 40px;
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 21px;
     text-transform: uppercase;
     background-color: var(--yellow);
     border: none;
     color: var(--button-color);
     white-space: nowrap;
+    box-shadow: var(--border-shadow);
   }
 
     p {
@@ -74,23 +83,33 @@ export const HeaderStyleInfo = styled.div `
     font-weight: 400;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 769px) {
     p {
       display: none;
     }
 
-    h3 {
-      max-width: 500px;
-    }
     span {
-      align-self: center;
+      font-size: 13px;
     }
   }
 
-  @media screen and (max-width: 378px) {
+  @media screen and (max-width: 769px) {
      button {
-       padding: 12px 19px ;
+       padding: 12px 19px;
+       font-size: 13px;
      }
+
+     h3, h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      max-width: 500px
+    }
+
+    button {
+      padding: 10px 20px;
+    }
   }
 }
 `

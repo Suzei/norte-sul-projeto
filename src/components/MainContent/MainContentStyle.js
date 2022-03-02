@@ -2,10 +2,23 @@ import styled from "styled-components"
 
 
 export const MainContentContainer = styled.div `
-  padding: 20px;
-  width: 100%;
-  h3 {
+  padding: 20px 0;
+  margin: auto;
+  max-width: 1162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+`
+
+export const MainContentInfo = styled.div `
+  padding: 30px;
+   h3 {
     margin-bottom: 13px;
+  }
+
+  p {
+    color: var(--matte-black)
   }
 
   h3::after {
@@ -25,13 +38,6 @@ export const MainContentContainer = styled.div `
         max-width: 220px;      
       }
     }
-  
-`
-
-export const MainContentPlano = styled.div `
-  background-color: var(--yellow);
-  margin: 0 auto;
-  
 `
 
 export default MainContentContainer
