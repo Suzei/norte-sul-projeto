@@ -9,7 +9,6 @@ export const PlanInfoStyle = styled.div `
   flex-wrap: wrap;
   border-radius: 12px;
   width: 100%;
-  max-width: 1125px;
   padding: 40px 0 ;
   gap: 30px;
   align-self: center;
@@ -17,15 +16,15 @@ export const PlanInfoStyle = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
   gap: 20px;
   
   &__plan {
     display: flex;
     flex-direction: column;
-    
+    white-space: nowrap;
+    gap: 12px;
+    justify-content: flex-end;
     h2 {
-      font-size: 2rem;
       color: var(--white);
     }
 
@@ -35,9 +34,7 @@ export const PlanInfoStyle = styled.div `
       font-size: 25px;
     }
 
-    sup:nth-child(1) {
-      font-weight: 400;
-    }
+
   }
 
   &__law {
@@ -76,14 +73,8 @@ export const PlanInfoStyle = styled.div `
     button {
       border-radius: 30px;
       background-color: var(--yellow);
-      border: none;
-      padding: 10px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 100%;
       cursor: pointer;
-      text-transform: uppercase;
       font-weight: 700;
       color: white;
     }

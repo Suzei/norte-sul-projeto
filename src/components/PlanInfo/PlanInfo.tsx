@@ -4,17 +4,19 @@ import { MdFileDownload } from 'react-icons/all';
 export default function PlanInfo () {
 
   return (
-    <PlanInfoStyle>
+    <PlanInfoStyle id="plano">
     <div className="content">
         <div className="content__plan"> 
-          <span>Plano Ouro</span>
+          <span style={{fontSize: "25px"}}>Plano Ouro</span>
           <sup style={{
             fontWeight: "400",
             fontSize: "25px",
-            color: "white"
+            color: "white",
+            marginTop: "12px",
+
 
           }}>A partir de</sup>
-          <h2><sup>R$</sup>255<sup>,65*</sup></h2>
+          <h2><sup >R$</sup>255<sup>,65*</sup></h2>
         </div>
 
         <div className="content__law">

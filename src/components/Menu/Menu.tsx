@@ -9,12 +9,14 @@ export default function Nav(){
         </div>
         
         <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Hospitais</a></li>
-          <li><a href="#">Benefícios</a></li>
-          <li><a href="#">Serviços especiais</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#plano">Sobre</a></li>
+          <li><a href="#hospitais">Hospitais</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#servicos">Serviços especiais</a></li>
+          <li><a href="#conato">Contato</a></li>
         </ul>
+
+        <img className="menu__hamburger" src="/src/images/harmburguer.png" alt="" />
     </NavMenu>
   )
 }

@@ -17,7 +17,8 @@ export const HeaderStyleInfo = styled.div `
 
   sub {
     max-width: 450px;
-    color: var(--button-color)
+    color: var(--button-color);
+    line-height: 1.2;
   }
 
   .header__prices {
@@ -66,7 +67,6 @@ export const HeaderStyleInfo = styled.div `
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 21px;
-    text-transform: uppercase;
     background-color: var(--yellow);
     border: none;
     color: var(--button-color);

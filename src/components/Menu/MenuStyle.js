@@ -20,6 +20,10 @@ ul {
   }
 }
 
+.menu__hamburger {
+    display: none;
+  }
+
 div {
   display: flex;
   gap: 30px;
@@ -28,6 +32,11 @@ div {
 @media screen and (max-width: 768px) {
   ul {
     display: none
+  }
+
+  .menu__hamburger {
+    display: block;
+    max-width: 21px;
   }
 }
 `
